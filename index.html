@@ -20,6 +20,14 @@ html{width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{width:1
 .teacher-bio li { font-size: 14px; color: #918d80; line-height: 1.9; }
 .teacher-bio li::before { content: "—"; color: #a58c60; margin-right: 8px; }
 
+.teacher-details { margin: 6px 0 0; font-size: 14px; color: #aaa395; }
+.teacher-details summary { cursor: pointer; color: #d1b47e; list-style: none; font-size: 14px; padding: 6px 0; }
+.teacher-details summary:after { content: "＋"; float: right; }
+.teacher-details[open] summary:after { content: "−"; }
+.teacher-details summary::marker { display: none; }
+.teacher-details ul { color: #c1baab; font-size: 14px; margin: 6px 0 0; padding-left: 1.35em; line-height: 1.9; }
+.teacher-details h5 { color: #e0c593; font-size: 14px; margin: 12px 0 4px; font-weight: 600; }
+
 nav .navlinks, .eyebrow, .kicker { font-size: 13px; }
 .hero p { font-size: 17px; }
 .hero .btn, .invitation .btn, .textlink { font-size: 15px; }
@@ -47,12 +55,25 @@ const courses = [
     "en": "PLANNING",
     "name": "成林",
     "initial": "成",
+    "bioTag": [
+      "領朝實業（上海）有限公司 總經理",
+      "上海開放大學特聘專家・跨境電商",
+      "旅居全球 48 國調研創新項目"
+    ],
     "bio": [
       "領朝實業（上海）有限公司 總經理",
       "上海開放大學特聘專家・跨境電商",
       "中美創投圈連續創業海歸",
       "美國密歇根州立大學碩士研究生",
-      "美國哈佛大學公派研究員"
+      "美國哈佛大學公派研究員",
+      "旅居全球 48 國家調研創新項目：時尚、教育、互聯網、空間設計、企業管理諮詢"
+    ],
+    "expertise": [
+      "外貿創業導師，成功輔導多家個人及公司國際站創業",
+      "出海品牌策劃：幫助企業海外品牌建立、宣傳介紹及發展規劃",
+      "擅長數據選品、產品佈局規劃；選詞、投放策略",
+      "直播、短視頻等新媒體新玩法獲客",
+      "豐富海外線下及線上客戶開發、談單與轉化經驗"
     ],
     "photo": "chenglin.jpg",
     "sub": "用趨勢找機會 · 用需求定產品 · 用權益放大",
@@ -110,7 +131,14 @@ const courses = [
     "svg": "<path d=\"M150 35 225 65v70q0 65-75 105-75-40-75-105V65Z\"/><path d=\"m115 130 25 25 50-55\"/><path d=\"M100 45 150 22 200 45 M55 100H30 M245 100h25 M60 175l-20 15 M240 175l20 15\"/>"
   }
 ];
-document.getElementById('courses').innerHTML=courses.map((c,i)=>`<article class="course"><div class="art"><div class="num">0${i+1} / III</div><svg viewBox="0 0 300 280" aria-hidden="true">${c.svg}</svg><div class="label">${c.en}</div></div><div class="coursecontent"><div class="meta"><span>CHAPTER 0${i+1}</span><span>${c.time} · 1.5 HR</span></div><h3>${c.title}</h3><p class="sub">${c.sub}</p>${c.intro ? `<p class="course-intro">${c.intro}</p>` : ''}<div class="teacher">${c.photo ? `<img class="avatar-img" src="${c.photo}" alt="${c.name}">` : `<div class="avatar">${c.initial}</div>`}<div><strong>${c.name}</strong><small>講師</small>${c.bio ? `<ul class="teacher-bio">${c.bio.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}</div></div>
+document.getElementById('courses').innerHTML=courses.map((c,i)=>`<article class="course"><div class="art"><div class="num">0${i+1} / III</div><svg viewBox="0 0 300 280" aria-hidden="true">${c.svg}</svg><div class="label">${c.en}</div></div><div class="coursecontent"><div class="meta"><span>CHAPTER 0${i+1}</span><span>${c.time} · 1.5 HR</span></div><h3>${c.title}</h3><p class="sub">${c.sub}</p>${c.intro ? `<p class="course-intro">${c.intro}</p>` : ''}<div class="teacher">${c.photo ? `<img class="avatar-img" src="${c.photo}" alt="${c.name}">` : `<div class="avatar">${c.initial}</div>`}<div><strong>${c.name}</strong><small>講師</small>${c.bioTag ? `<ul class="teacher-bio">${c.bioTag.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}</div></div>
+${c.bio ? `
+<details class="teacher-details">
+  <summary>講師介紹</summary>
+  <ul>${c.bio.map(b => `<li>${b}</li>`).join('')}</ul>
+  ${c.expertise ? `<h5>專業能力</h5><ul>${c.expertise.map(e => `<li>${e}</li>`).join('')}</ul>` : ''}
+</details>
+` : ''}
 ${c.pain ? `
 <section class="lesson-section">
   <h4>這堂課適合遇到這些問題的你</h4>
