@@ -32,6 +32,8 @@ html{width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{width:1
 .qrcode { width: 140px; height: 140px; display: block; margin: 0 auto; border: 1px solid #a88953; border-radius: 10px; padding: 8px; background: #f5f1e8; }
 .qrcode-hint { display: block; margin-top: 10px; font-size: 12px; letter-spacing: 3px; color: #c1baab; }
 
+.coming-soon { margin: 6px 0 0; padding: 14px 18px; border: 1px dashed #a98b4d; border-radius: 8px; color: #e0c593; font-size: 15px; letter-spacing: 1px; text-align: center; background: #16130c; }
+
 nav .navlinks, .eyebrow, .kicker { font-size: 13px; }
 .hero p { font-size: 17px; }
 .hero .btn, .invitation .btn, .textlink { font-size: 15px; }
@@ -123,6 +125,7 @@ const courses = [
     "initial": "K",
     "sub": "權益使用 × 數據盤點 × 資源配置",
     "intro": "盤點手上的金品權益用了多少，再用數據找出缺口，決定接下來資源怎麼配。",
+    "comingSoon": true,
     "svg": "<circle cx=\"150\" cy=\"135\" r=\"85\"/><circle cx=\"150\" cy=\"135\" r=\"58\"/><circle cx=\"150\" cy=\"135\" r=\"29\"/><path d=\"M55 205 116 155 160 166 246 66 M209 66h37v37\"/><circle cx=\"246\" cy=\"66\" r=\"8\"/>"
   },
   {
@@ -133,10 +136,12 @@ const courses = [
     "initial": "蘇",
     "sub": "企業買家 × 業務跟進 × 成交轉化",
     "intro": "流量進來後，業務團隊如何接住企業買家、運用金品權益建立信任，並推進下一步成交？",
+    "comingSoon": true,
     "svg": "<path d=\"M150 35 225 65v70q0 65-75 105-75-40-75-105V65Z\"/><path d=\"m115 130 25 25 50-55\"/><path d=\"M100 45 150 22 200 45 M55 100H30 M245 100h25 M60 175l-20 15 M240 175l20 15\"/>"
   }
 ];
 document.getElementById('courses').innerHTML=courses.map((c,i)=>`<article class="course"><div class="art"><div class="num">0${i+1}</div><svg viewBox="0 0 300 280" aria-hidden="true">${c.svg}</svg><div class="label">${c.en}</div></div><div class="coursecontent"><div class="meta"><span>CHAPTER 0${i+1}</span><span>${c.time} · 1.5 HR</span></div><h3>${c.title}</h3><p class="sub">${c.sub}</p>${c.intro ? `<p class="course-intro">${c.intro}</p>` : ''}<div class="teacher">${c.photo ? `<img class="avatar-img" src="${c.photo}" alt="${c.name}">` : `<div class="avatar">${c.initial}</div>`}<div><strong>${c.name}</strong><small>講師</small>${c.bioTag ? `<ul class="teacher-bio">${c.bioTag.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}</div></div>
+${c.comingSoon ? `<p class="coming-soon">詳細課程內容持續與講師積極討論中，敬請期待！</p>` : ''}
 ${c.bio ? `
 <details class="teacher-details">
   <summary>講師介紹</summary>
