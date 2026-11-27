@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GoldEliteCourses//TW//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:金品贏家｜旺季衝刺三部曲
+BEGIN:VEVENT
+UID:20261202-goldelite@alibabaamyh-cmyk
+DTSTAMP:20261127T090000Z
+DTSTART:20261202T060000Z
+DTEND:20261202T073000Z
+SUMMARY:金品贏家三部曲 01｜決勝 2027：精準洞察市場需求到產品戰略
+DESCRIPTION:講師：成林｜台灣金品商家專屬課程｜報名與詳情：https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+LOCATION:線上直播
+URL:https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:金品贏家三部曲 01｜決勝 2027：精準洞察市場需求到產品戰略
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261209-goldelite@alibabaamyh-cmyk
+DTSTAMP:20261127T090000Z
+DTSTART:20261209T060000Z
+DTEND:20261209T073000Z
+SUMMARY:金品贏家三部曲 02｜金品效益最大化：從流量到詢盤的實戰打法
+DESCRIPTION:講師：Keyi｜台灣金品商家專屬課程｜報名與詳情：https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+LOCATION:線上直播
+URL:https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:金品贏家三部曲 02｜金品效益最大化：從流量到詢盤的實戰打法
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261216-goldelite@alibabaamyh-cmyk
+DTSTAMP:20261127T090000Z
+DTSTART:20261216T060000Z
+DTEND:20261216T073000Z
+SUMMARY:金品贏家特別加場｜金品廣告權益大升級，佈局 2027 投放策略
+DESCRIPTION:講師：馬超｜台灣金品商家專屬課程｜報名與詳情：https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+LOCATION:線上直播
+URL:https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:金品贏家特別加場｜金品廣告權益大升級，佈局 2027 投放策略
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261223-goldelite@alibabaamyh-cmyk
+DTSTAMP:20261127T090000Z
+DTSTART:20261223T060000Z
+DTEND:20261223T073000Z
+SUMMARY:金品贏家三部曲 03｜接住企業買家，推進成交
+DESCRIPTION:講師：蘇先順｜台灣金品商家專屬課程｜報名與詳情：https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+LOCATION:線上直播
+URL:https://alibabaamyh-cmyk.github.io/gold-elite-courses/
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:金品贏家三部曲 03｜接住企業買家，推進成交
+END:VALARM
+END:VEVENT
+END:VCALENDAR
