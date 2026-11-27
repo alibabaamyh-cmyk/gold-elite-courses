@@ -15,6 +15,10 @@ html{width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{width:1
 .lesson-agenda strong { color: #eee6d6; font-weight: 600; }
 .step small { white-space: normal; }
 
+.step-special { grid-column: 1 / -1; border-right: 0; border-top: 1px solid #c7a66a35; }
+.step-special span { color: #e0c593; font-style: normal; font-size: 26px; }
+.step-special b { color: #e0c593; }
+
 .avatar-img { width: 108px; height: 144px; border-radius: 10px; border: 1px solid #a98b4d; object-fit: cover; object-position: top; flex-shrink: 0; box-shadow: 0 6px 24px #000a; }
 .teacher-bio { list-style: none; padding: 0; margin: 6px 0 0; }
 .teacher-bio li { font-size: 14px; color: #918d80; line-height: 1.9; }
@@ -33,6 +37,13 @@ html{width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{width:1
 .qrcode-hint { display: block; margin-top: 10px; font-size: 12px; letter-spacing: 3px; color: #c1baab; }
 
 .coming-soon { margin: 6px 0 0; padding: 14px 18px; border: 1px dashed #a98b4d; border-radius: 8px; color: #e0c593; font-size: 15px; letter-spacing: 1px; text-align: center; background: #16130c; }
+
+.course.special { border-color: #c7a66a80; background: radial-gradient(ellipse at 30% 0%, #6c532638, transparent 60%), #11120f; }
+.course.special .art { background: radial-gradient(ellipse at 50% 55%, #8a6a2f50, transparent 70%), #0d0f0c; }
+.course.special .art:after { border-color: #c7a66a3d; }
+.course.special .art .label { color: #e0c593; }
+.course.special .meta span:first-child { color: #e0c593; letter-spacing: 3px; }
+.course.special .art .num { color: #e0c593; font-style: normal; }
 
 nav .navlinks, .eyebrow, .kicker { font-size: 13px; }
 .hero p { font-size: 17px; }
@@ -53,8 +64,8 @@ nav .navlinks, .eyebrow, .kicker { font-size: 13px; }
   .step small { overflow-wrap: normal; letter-spacing: 0; }
   .hero .actions { gap: 12px 18px; }
 }
-</style><body><nav><a href="#" class="brand"><span class="seal">G</span>金品贏家 <span style="font:9px Georgia;color:#b39560;letter-spacing:2px">專屬課程</span></a><div class="navlinks"><a href="#program">專屬課程</a><a href="#invitation">邀請資訊 ↗</a></div></nav><header class="hero"><canvas id="gold" aria-hidden="true"></canvas><div class="hero-copy"><div class="eyebrow">台灣金品商家專屬課程</div><h1>金品贏家<br><span class="gold"><span class="title-part">旺季衝刺</span><span class="title-part">三部曲</span></span></h1><p>獻給，準備領先一步的金品商家。<br>從決勝 2027 的需求洞察、金品權益盤點，到企業買家的成交轉化。</p><div class="actions"><a class="btn" href="#program">探索專屬課程 <span>↓</span></a><a class="textlink" href="#invitation">查看邀請資訊 ↗</a></div></div><div class="herobottom"><span>金品商家專屬</span><span>淡季練兵 · 旺季先行</span></div></header><section class="intro"><div><small>YOUR NEXT CHAPTER</small><b class="introtitle">金品商家的進階之路</b></div><div><b>03 <small>堂</small></b><small>層層推進的實戰課程</small></div><div><b>1.5 <small>HR／堂</small></b><small>線上直播 · 聚焦實戰</small></div><div><b>11–12 <small>月</small></b><small>12/2 起 · 14:00–15:30 · 三堂系列課程</small></div></section><main class="wrap" id="program"><div class="sectionhead"><div><div class="kicker">THE WINNING TRILOGY</div><h2>洞察 → 盤點 → 轉化</h2></div><p>三堂課串成一條經營閉環。從看懂市場需求、配置資源到推進成交，每一步都把金品權益用進實際經營。</p></div><div class="journey"><div class="step"><span>01</span><div><b>洞察 · 決定方向</b><small>12/2（三）14:00–15:30｜成林</small></div></div><div class="step"><span>02</span><div><b>盤點 · 配置資源</b><small>12/9（三）14:00–15:30｜Keyi</small></div></div><div class="step"><span>03</span><div><b>轉化 · 推進成交</b><small>12/23（三）14:00–15:30｜蘇先順</small></div></div></div><div id="courses"></div><section class="invitation" id="invitation"><div class="kicker">AN INVITATION TO YOUR NEXT LEVEL</div><h2>您的金品實力，<br><span class="gold">值得被更多買家看見。</span></h2><p>台灣金品商家專屬系列課程。<br>從決勝 2027 的需求洞察、權益盤點到業務轉化，把金品權益用在每個關鍵節點。</p><a class="btn" href="https://alidocs.dingtalk.com/notable/share/form/v01yBRq1ZPAGVxQpOdv_wIwPYkx_s9SaCKP?source=link" target="_blank" rel="noopener">立即報名課程 <span>↗</span></a><div class="qrcode-wrap"><img class="qrcode" src="qrcode.png" alt="報名課程 QR Code" width="140" height="140"><small class="qrcode-hint">掃碼立即報名</small></div>
-<div class="note">12/2（三）／12/9（三）／12/23（三）｜14:00–15:30</div></section></main><footer><div>台灣金品商家專屬系列課程</div><div><button class="toggle" id="motion">暫停流金動畫</button></div></footer><script>
+</style><body><nav><a href="#" class="brand"><span class="seal">G</span>金品贏家 <span style="font:9px Georgia;color:#b39560;letter-spacing:2px">專屬課程</span></a><div class="navlinks"><a href="#program">專屬課程</a><a href="#invitation">邀請資訊 ↗</a></div></nav><header class="hero"><canvas id="gold" aria-hidden="true"></canvas><div class="hero-copy"><div class="eyebrow">台灣金品商家專屬課程</div><h1>金品贏家<br><span class="gold"><span class="title-part">旺季衝刺</span><span class="title-part">三部曲</span></span></h1><p>獻給，準備領先一步的金品商家。<br>從決勝 2027 的需求洞察、金品效益最大化、廣告權益升級，到企業買家的成交轉化。</p><div class="actions"><a class="btn" href="#program">探索專屬課程 <span>↓</span></a><a class="textlink" href="#invitation">查看邀請資訊 ↗</a></div></div><div class="herobottom"><span>金品商家專屬</span><span>淡季練兵 · 旺季先行</span></div></header><section class="intro"><div><small>YOUR NEXT CHAPTER</small><b class="introtitle">金品商家的進階之路</b></div><div><b>03+1 <small>堂</small></b><small>三部曲＋特別加場課程</small></div><div><b>1.5 <small>HR／堂</small></b><small>線上直播 · 聚焦實戰</small></div><div><b>11–12 <small>月</small></b><small>12/2 起 · 14:00–15:30 · 含 12/16 加場</small></div></section><main class="wrap" id="program"><div class="sectionhead"><div><div class="kicker">THE WINNING TRILOGY</div><h2>洞察 → 效益 → 轉化</h2></div><p>三堂課串成一條經營閉環，再加上 12/16 廣告權益特別加場——當 AI 能美化一切，驗證過的信任，就是最強的投放素材。</p></div><div class="journey"><div class="step"><span>01</span><div><b>洞察 · 決定方向</b><small>12/2（三）14:00–15:30｜成林</small></div></div><div class="step"><span>02</span><div><b>效益 · 權益用到位</b><small>12/9（三）14:00–15:30｜Keyi</small></div></div><div class="step"><span>03</span><div><b>轉化 · 推進成交</b><small>12/23（三）14:00–15:30｜蘇先順</small></div></div><div class="step step-special"><span>★</span><div><b>加開場 · 廣告權益大升級，佈局 2027</b><small>12/16（三）14:00–15:30｜馬超</small></div></div></div><div id="courses"></div><section class="invitation" id="invitation"><div class="kicker">AN INVITATION TO YOUR NEXT LEVEL</div><h2>您的金品實力，<br><span class="gold">值得被更多買家看見。</span></h2><p>台灣金品商家專屬系列課程。<br>從決勝 2027 的需求洞察、效益最大化到業務轉化，把金品權益用在每個關鍵節點。</p><a class="btn" href="https://alidocs.dingtalk.com/notable/share/form/v01yBRq1ZPAGVxQpOdv_wIwPYkx_s9SaCKP?source=link" target="_blank" rel="noopener">立即報名課程 <span>↗</span></a><div class="qrcode-wrap"><img class="qrcode" src="qrcode.png" alt="報名課程 QR Code" width="140" height="140"><small class="qrcode-hint">掃碼立即報名</small></div>
+<div class="note">12/2（三）／12/9（三）／12/16（三）加場／12/23（三）｜14:00–15:30</div></section></main><footer><div>台灣金品商家專屬系列課程</div><div><button class="toggle" id="motion">暫停流金動畫</button></div></footer><script>
 const courses = [
   {
     "title": "決勝 2027：精準洞察市場需求到產品戰略",
@@ -118,7 +129,7 @@ const courses = [
     "svg": "<path d=\"M45 195 150 140 255 195 150 250Z M45 160 150 105 255 160 150 215Z M45 125 150 70 255 125 150 180Z\"/><path d=\"M150 20v45 M125 43l25-23 25 23\"/><circle cx=\"150\" cy=\"125\" r=\"18\"/>"
   },
   {
-    "title": "盤點金品權益，找出資源缺口",
+    "title": "金品效益最大化：從流量到詢盤的實戰打法",
     "time": "12/9（三）14:00–15:30",
     "en": "REVIEW",
     "name": "Keyi",
@@ -145,15 +156,82 @@ const courses = [
       "貿易公司 AI 工具應用與工作流改造",
       "數據化運營：關鍵詞策略與投放優化"
     ],
-    "sub": "權益使用 × 數據盤點 × 資源配置",
-    "intro": "盤點手上的金品權益用了多少，再用數據找出缺口，決定接下來資源怎麼配。",
-    "comingSoon": true,
+    "sub": "基礎運營 × AI 工具 × 保效廣告",
+    "intro": "不追新玩法，回歸基礎運營：星等、發品、RFQ、詢盤回覆與點擊轉化，基本功就能解決九成問題。Keyi 老師帶你把每個環節接上 AI 工具與保效廣告，把金品權益的效益放到最大。",
+    "pain": [
+      "追了一堆新玩法，效果有限又難以複製。",
+      "RTS 接了不少單，卻發現不一定適合自己的行業。",
+      "流量有，但買家品質參差不齊、比價的多。",
+      "主圖點擊率低，不知道問題出在哪。",
+      "開了全站推，來的買家不精準，怕錢花了沒效果。"
+    ],
+    "agenda": [
+      [
+        "流量最大化的核心關鍵",
+        "紮實的運營指南，有效解決 90% 流量問題。"
+      ],
+      [
+        "找對交易模式，運用 AI 找出行業專屬詞篩出精準買家",
+        "精準詞帶來的客戶品質，遠高於泛流量。"
+      ],
+      [
+        "AI 工具加速，為外貿的每一個環節提效降本",
+        "把 AI 用進日常運營的每個動作。"
+      ],
+      [
+        "讓預算花在刀口上，談保效廣告",
+        "投入有明確預期，不再怕錢花了沒效果。"
+      ],
+      [
+        "台灣金品權益盤點及最大化落地",
+        "讓每一項權益在對的節點發揮效益。"
+      ]
+    ],
     "svg": "<circle cx=\"150\" cy=\"135\" r=\"85\"/><circle cx=\"150\" cy=\"135\" r=\"58\"/><circle cx=\"150\" cy=\"135\" r=\"29\"/><path d=\"M55 205 116 155 160 166 246 66 M209 66h37v37\"/><circle cx=\"246\" cy=\"66\" r=\"8\"/>"
+  },
+  {
+    "title": "金品廣告權益大升級，佈局 2027 投放策略",
+    "time": "12/16（三）14:00–15:30",
+    "en": "SPECIAL",
+    "chapter": "特別加場 · SPECIAL",
+    "num": "★",
+    "special": true,
+    "name": "馬超",
+    "initial": "馬",
+    "sub": "驗真信任 × 廣告權益 × 2027 佈局",
+    "intro": "當 AI 能把圖修到完美、把文案寫得漂亮，買家真正相信的，只剩「驗證過的事實」。把金品驗廠、驗真變成投放武器——廣告權益一次升級，提前卡位 2027。",
+    "pain": [
+      "廣告費越花越多，詢盤品質卻沒跟上。",
+      "同行素材越來越漂亮，找不到自己的差異化。",
+      "2027 的廣告預算，還不知道怎麼投放能讓效益最大化。",
+      "想知道最新的金品升級廣告資源。"
+    ],
+    "agenda": [
+      [
+        "AI 時代的信任紅利",
+        "當素材都能被生成，「驗證過的」是買家唯一能信的信號。怎麼善用「推工廠」。"
+      ],
+      [
+        "驗廠 × 驗真：把信任變成素材",
+        "Verified 標章、驗廠報告、認證如何進入商品頁與廣告創意。"
+      ],
+      [
+        "金品廣告權益大升級",
+        "權益怎麼用才會加乘：驗真訊號 × 投放組合。"
+      ],
+      [
+        "佈局 2027 廣告策略",
+        "旺季前的預算節奏、關鍵詞與市場卡位。"
+      ]
+    ],
+    "svg": "<path d=\"M75 135 210 75v120L75 135Z\"/><path d=\"M75 135 60 150v30l15 15 15-15\"/><path d=\"M228 95q16 40 0 80\"/><path d=\"M244 78q26 57 0 114\"/><path d=\"M95 168h22\"/><path d=\"M95 150h12\"/>"
   },
   {
     "title": "接住企業買家，推進成交",
     "time": "12/23（三）14:00–15:30",
     "en": "CONVERSION",
+    "chapter": "CHAPTER 03",
+    "num": "03",
     "name": "蘇先順",
     "initial": "蘇",
     "photo": "su.jpg",
@@ -183,7 +261,7 @@ const courses = [
     "svg": "<path d=\"M150 35 225 65v70q0 65-75 105-75-40-75-105V65Z\"/><path d=\"m115 130 25 25 50-55\"/><path d=\"M100 45 150 22 200 45 M55 100H30 M245 100h25 M60 175l-20 15 M240 175l20 15\"/>"
   }
 ];
-document.getElementById('courses').innerHTML=courses.map((c,i)=>`<article class="course"><div class="art"><div class="num">0${i+1}</div><svg viewBox="0 0 300 280" aria-hidden="true">${c.svg}</svg><div class="label">${c.en}</div></div><div class="coursecontent"><div class="meta"><span>CHAPTER 0${i+1}</span><span>${c.time} · 1.5 HR</span></div><h3>${c.title}</h3><p class="sub">${c.sub}</p>${c.intro ? `<p class="course-intro">${c.intro}</p>` : ''}<div class="teacher">${c.photo ? `<img class="avatar-img" src="${c.photo}" alt="${c.name}">` : `<div class="avatar">${c.initial}</div>`}<div><strong>${c.name}</strong><small>講師</small>${c.bioTag ? `<ul class="teacher-bio">${c.bioTag.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}</div></div>
+document.getElementById('courses').innerHTML=courses.map((c,i)=>`<article class="course${c.special?' special':''}"><div class="art"><div class="num">${c.num||'0'+(i+1)}</div><svg viewBox="0 0 300 280" aria-hidden="true">${c.svg}</svg><div class="label">${c.en}</div></div><div class="coursecontent"><div class="meta"><span>${c.chapter||'CHAPTER 0'+(i+1)}</span><span>${c.time} · 1.5 HR</span></div><h3>${c.title}</h3><p class="sub">${c.sub}</p>${c.intro ? `<p class="course-intro">${c.intro}</p>` : ''}<div class="teacher">${c.photo ? `<img class="avatar-img" src="${c.photo}" alt="${c.name}">` : `<div class="avatar">${c.initial}</div>`}<div><strong>${c.name}</strong><small>講師</small>${c.bioTag ? `<ul class="teacher-bio">${c.bioTag.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}</div></div>
 ${c.comingSoon ? `<p class="coming-soon">詳細課程內容持續與講師積極討論中，敬請期待！</p>` : ''}
 ${c.bio ? `
 <details class="teacher-details">
@@ -205,10 +283,12 @@ ${c.pain ? `
     `).join('')}
   </ol>
 </section>
+${c.out ? `
 <section class="lesson-section">
   <h4>課後你會帶走</h4>
   <ul>${c.out.map(item => `<li>${item}</li>`).join('')}</ul>
 </section>` : ''}
+` : ''}
 </div></article>`).join('');
 const canvas=document.getElementById('gold'),ctx=canvas.getContext('2d');let w,h,t=0,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches,raf;function resize(){let d=Math.min(devicePixelRatio||1,2);w=canvas.clientWidth;h=canvas.clientHeight;canvas.width=w*d;canvas.height=h*d;ctx.setTransform(d,0,0,d,0,0);draw()}function draw(){ctx.clearRect(0,0,w,h);let glow=ctx.createRadialGradient(w*.78,h*.48,0,w*.78,h*.48,w*.55);glow.addColorStop(0,'#59451c35');glow.addColorStop(1,'#0000');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);for(let j=0;j<110;j++){let a=j/110;ctx.beginPath();for(let i=0;i<=140;i++){let y=h*(i/140)*1.35-h*.18;let x=w*.78+Math.sin(i/140*6.5+t*.23+a*.8)*w*.17+Math.cos(i/140*10-t*.14)*w*.035+(a-.5)*w*.25*Math.sin(i/140*4+t*.15);i?ctx.lineTo(x,y):ctx.moveTo(x,y)}let v=Math.round(130+100*Math.pow(Math.sin(a*Math.PI),6));ctx.strokeStyle=`rgba(${v+20},${Math.round(v*.78)},${Math.round(v*.4)},${.16+Math.pow(Math.sin(a*12+t*.3),12)*.37})`;ctx.lineWidth=j%9===0?1.2:.55;ctx.stroke()}for(let i=0;i<32;i++){let x=w*(.48+(Math.sin(i*73.1)*.5+.5)*.5),y=((i*97-t*9)%h+h)%h;ctx.fillStyle=`rgba(222,187,111,${.2+Math.sin(i+t)*.15})`;ctx.beginPath();ctx.arc(x,y,i%5===0?1.3:.6,0,Math.PI*2);ctx.fill()}}function frame(){t+=.016;draw();if(playing)raf=requestAnimationFrame(frame)}function label(){document.getElementById('motion').textContent=playing?'暫停流金動畫':'播放流金動畫'}document.getElementById('motion').onclick=()=>{playing=!playing;cancelAnimationFrame(raf);if(playing)frame();label()};window.addEventListener('resize',resize);resize();if(playing)frame();label();
 </script></body></html>
